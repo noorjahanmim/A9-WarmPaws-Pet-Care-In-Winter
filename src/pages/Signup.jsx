@@ -68,37 +68,14 @@ const Signup = () => {
         <input type="text" name="name" placeholder="Name" className="input w-full border px-3 py-2 bg-blue-100" required />
         <input type="email" name="email" placeholder="Email" className="input bg-blue-100 w-full border px-3 py-2" required />
         <input type="text" name="photoURL" placeholder="Photo URL" className="input bg-blue-100 w-full border px-3 py-2" />
-        {/* <div className="relative">
+        <div className="relative">
           <input type={show ? "text" : "password"} name="password" placeholder="Password" className="input bg-blue-100 w-full border px-3 py-2" required />
           <span onClick={() => setShow(!show)} className="absolute right-3 top-3 cursor-pointer text-xl">
             {show ? <RxEyeOpen /> : <GoEyeClosed />}
           </span>
-        </div> */}
+        </div>
 
 
-        <div className="relative">
-  <input
-    type={show ? "text" : "password"}
-    name="password"
-    placeholder="Password"
-    className="input bg-blue-100 w-full border px-3 py-2 pr-10 rounded-md"
-    required
-  />
-  <button
-    type="button"
-    onClick={() => setShow(!show)}
-    className="absolute right-3 top-1/2 -translate-y-1/2 text-xl text-gray-600 hover:text-blue-500"
-  >
-    {show ? <RxEyeOpen /> : <GoEyeClosed />}
-  </button>
-</div>
-
-
-
-        
-
-
-        
         <button type="submit" className="btn w-full bg-blue-400 border-none text-white">Register</button>
       </form>
 
