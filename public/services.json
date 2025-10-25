@@ -1,0 +1,72 @@
+
+[
+    {
+        "serviceId": 1,
+        "serviceName": "Winter Coat Fitting for Dogs",
+        "providerName": "PawCare Studio",
+        "providerEmail": "info@pawcare.com",
+        "price": 25,
+        "rating": 4.9,
+        "slotsAvailable": 4,
+        "description": "Custom coat fitting and warm outfit options to keep your cat comfortable in the cold.",
+        "image": "https://i.pinimg.com/736x/4d/a7/bd/4da7bd21de211f7575123ab2286264e8.jpg",
+        "category": "Clothing"
+    },
+    {
+        "serviceId": 2,
+        "serviceName": "Winter Grooming & Paw Treatment",
+        "providerName": "CozyPets Grooming",
+        "providerEmail": "hello@cozypets.com",
+        "price": 30,
+        "rating": 4.8,
+        "slotsAvailable": 3,
+        "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+        "image": "https://i.pinimg.com/736x/9f/de/2f/9fde2f22a2b767970a93e0b528e8a524.jpg",
+        "category": "Grooming"
+    },
+    {
+        "serviceId": 3,
+        "serviceName": "Warm Shelter Setup Consultation",
+        "providerName": "SafeHaven Pets",
+        "providerEmail": "contact@safehavenpets.com",
+        "price": 20,
+        "rating": 4.7,
+        "slotsAvailable": 5,
+        "description": "Expert advice on setting up cozy indoor and outdoor shelters for pets during cold weather.",
+        "image": "https://i.pinimg.com/736x/b6/4b/55/b64b55b478453b7c6cf84d05fd4a707b.jpg",
+        "category": "Consultation"
+    },
+    {
+        "serviceId": 4,
+        "serviceName": "Winter Diet Planning for Cats & Dogs",
+        "providerName": "NutriPaws Clinic",
+        "providerEmail": "support@nutripaws.com",
+        "price": 18,
+        "rating": 4.6,
+        "slotsAvailable": 6,
+        "description": "Customized winter diet plan to boost immunity and energy for your furry friends.",
+        "image": "https://i.pinimg.com/736x/48/75/a6/4875a6db7dbd7437a0489836240b9111.jpg",
+        "category": "Nutrition"
+    },
+    {
+    "serviceId": 5,
+    "serviceName": "Warm Bedding for Cats",
+    "providerName": "FurComfort",
+    "price": 20,
+    "rating": 4.7,
+    "image": "https://i.pinimg.com/1200x/00/e6/34/00e6341bb6672d4d4faf9c318a5987a8.jpg",
+    "description": "Soft, insulated beds for cats to stay warm during winter nights."
+  },
+    {
+        "serviceId": 6,
+        "serviceName": "Snow Walk Training & Safety Tips",
+        "providerName": "FurSteps Academy",
+        "providerEmail": "info@fursteps.com",
+        "price": 22,
+        "rating": 4.9,
+        "slotsAvailable": 4,
+        "description": "Learn safe walking techniques and protective gear use for snowy environments.",
+        "image": "https://i.pinimg.com/736x/5e/c6/4b/5ec64b5d7acd8702c0a3a6eb3a0c9985.jpg",
+        "category": "Training"
+    }
+]
