@@ -47,8 +47,8 @@ const Signup = () => {
     signInWithPopup(auth, provider)
       .then(result => {
         console.log(result)
-        toast.success("Logged in with Google!");
-        navigate("/"); // Home page
+        toast.success("Signup with Google!");
+        navigate("/");
       })
       .catch(error => {
         toast.error(error.message);
