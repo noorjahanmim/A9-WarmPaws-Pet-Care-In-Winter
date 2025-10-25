@@ -4,62 +4,48 @@ import PawImage from '../assets/paw.jpg';
 export default function Footer() {
   return (
     <footer
-      className="footer footer-horizontal footer-center 
-                 bg-[url('https://img.freepik.com/free-vector/eye-catching-cute-footprint-pattern-background-design_1017-49663.jpg')]
-                 bg-cover bg-center bg-no-repeat 
-                 text-primary-content py-10 px-5 relative"
+      className="relative bg-[url('https://img.freepik.com/free-vector/eye-catching-cute-footprint-pattern-background-design_1017-49663.jpg')]
+                 bg-cover bg-center bg-no-repeat text-gray-800 py-10 px-5"
     >
-      {/* Overlay for better readability */}
-      <div className="absolute "></div>
+      <div className="flex flex-col items-center justify-center gap-6">
+        {/* Logo */}
+        <img src={PawImage} alt="paw print" className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full mb-2"/>
 
-      <aside className="relative z-10 text-gray-800">
-        <img src={PawImage} alt="paw print" className="w-30 h-30 rounded-full"/>
-        <p className="font-bold">
+        {/* Text */}
+        <p className="font-bold text-sm sm:text-base md:text-lg text-center">
           WarmPaws – Pet Winter Care <br />
           Keeping your furry friends cozy since 2025 🐾
         </p>
-        <p>
+        <p className="text-xs sm:text-sm md:text-base text-center">
           © {new Date().getFullYear()} WarmPaws. All rights reserved.
         </p>
-      </aside>
 
-      <nav className="relative z-10">
-        <div className="grid grid-flow-col gap-4 text-blue-400">
-          <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-        </div>
-      </nav>
+        {/* Social Icons */}
+        <nav>
+          <div className="flex gap-4 justify-center">
+            {/* Facebook */}
+            <a href="#" className="text-blue-500 hover:text-blue-600 transition rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
+                <path d="M22.675 0h-21.35C.597 0 0 .592 0 1.326v21.348C0 23.408.597 24 1.325 24H12.82v-9.294H9.692V11.02h3.128V8.414c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.313h3.59l-.467 3.686h-3.123V24h6.116C23.403 24 24 23.408 24 22.674V1.326C24 .592 23.403 0 22.675 0z"/>
+              </svg>
+            </a>
+
+            {/* Twitter */}
+            <a href="#" className="text-blue-400 hover:text-blue-500 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
+                <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.384 4.482A13.944 13.944 0 011.671 3.149a4.916 4.916 0 001.523 6.573 4.903 4.903 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.902 4.902 0 01-2.224.084 4.918 4.918 0 004.588 3.417A9.867 9.867 0 010 21.543a13.933 13.933 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A9.936 9.936 0 0024 4.557z"/>
+              </svg>
+            </a>
+
+            {/* YouTube */}
+            <a href="#" className="text-red-500 hover:text-red-600 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
+                <path d="M23.498 6.186a2.994 2.994 0 00-2.11-2.115C19.553 3.5 12 3.5 12 3.5s-7.553 0-9.389.571a2.994 2.994 0 00-2.11 2.115C0 8.024 0 12 0 12s0 3.976.501 5.814a2.994 2.994 0 002.11 2.115c1.836.571 9.389.571 9.389.571s7.553 0 9.389-.571a2.994 2.994 0 002.11-2.115C24 15.976 24 12 24 12s0-3.976-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
     </footer>
   );
 }

@@ -25,33 +25,41 @@ const ServiceDetails = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       {/* Two column layout */}
-      <div className="flex flex-col md:flex-row gap-8 items-start">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
         {/* Left side: Image */}
-        <div className="md:w-1/2">
+        <div className="w-full md:w-1/2">
           <img
             src={service.image}
             alt={service.serviceName}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-auto object-cover rounded-2xl shadow-md"
           />
         </div>
 
         {/* Right side: Details */}
-        <div className="md:w-1/2 flex flex-col justify-between">
+        <div className="w-full md:w-1/2 flex flex-col justify-between mt-6 md:mt-0">
           <div>
-            <h2 className="text-4xl font-bold mb-4">{service.serviceName}</h2>
-            <p className="text-gray-600 mb-1">Provider: {service.providerName}</p>
-            <p className="text-gray-600 mb-1">Email: {service.providerEmail}</p>
-            <p className="font-semibold text-gray-800 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              {service.serviceName}
+            </h2>
+            <p className="text-gray-600 mb-1 sm:text-base text-sm">
+              Provider: {service.providerName}
+            </p>
+            <p className="text-gray-600 mb-1 sm:text-base text-sm">
+              Email: {service.providerEmail}
+            </p>
+            <p className="font-semibold text-gray-800 mb-4 sm:text-lg text-base">
               Price: ${service.price} | Rating: ⭐{service.rating}
             </p>
 
-            <h3 className="text-xl font-semibold mb-2">Service Details:</h3>
-            <p className="text-gray-700">{service.description}</p>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2">
+              Service Details:
+            </h3>
+            <p className="text-gray-700 text-sm sm:text-base">{service.description}</p>
           </div>
 
           <button
             onClick={handleBooking}
-            className="mt-8 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition"
+            className="mt-6 sm:mt-8 w-full md:w-auto bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition text-sm sm:text-base"
           >
             Book Now
           </button>
