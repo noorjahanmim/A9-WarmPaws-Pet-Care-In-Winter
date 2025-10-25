@@ -24,9 +24,9 @@ const ServiceDetails = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
-      {/* Two column layout */}
+      {/* Two-column layout */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
-        {/* Left side: Image */}
+        {/* Left: Image */}
         <div className="w-full md:w-1/2">
           <img
             src={service.image}
@@ -35,25 +35,21 @@ const ServiceDetails = () => {
           />
         </div>
 
-        {/* Right side: Details */}
+        {/* Right: Details */}
         <div className="w-full md:w-1/2 flex flex-col justify-between mt-6 md:mt-0">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              {service.serviceName}
-            </h2>
-            <p className="text-gray-600 mb-1 sm:text-base text-sm">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">{service.serviceName}</h2>
+            <p className="text-gray-600 mb-1 text-sm sm:text-base">
               Provider: {service.providerName}
             </p>
-            <p className="text-gray-600 mb-1 sm:text-base text-sm">
+            <p className="text-gray-600 mb-1 text-sm sm:text-base">
               Email: {service.providerEmail}
             </p>
-            <p className="font-semibold text-gray-800 mb-4 sm:text-lg text-base">
+            <p className="font-semibold text-gray-800 mb-4 text-base sm:text-lg">
               Price: ${service.price} | Rating: ⭐{service.rating}
             </p>
 
-            <h3 className="text-xl sm:text-2xl font-semibold mb-2">
-              Service Details:
-            </h3>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2">Service Details:</h3>
             <p className="text-gray-700 text-sm sm:text-base">{service.description}</p>
           </div>
 
